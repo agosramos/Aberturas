@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+/*barra navegadora*/
+#menu {
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        grid-template-rows: repeat(1, 2fr);
+        height: 10vh;
+        width: 190vh;
+        justify-content: space-evenly;
+        align-content:flex-end;
+}
+
+#menu {
+    color: white;
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    border-top-width: 0px;
+    width: 100vw;
+    height: 80px;
+    text-justify: auto;
+    }
+    
+#menu li {
+    display: inline;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: center;
+    right: 50%;
+    }
+    
+a{
+    text-decoration: none;
+    }
+
+
+.nav img {
+        width: 5vw;
+        margin-bottom: 20px;
+        padding: 0;
+        border: 0;
+        margin: 0;
+}
+
+/*contenido principal*/
+
+#contenido_principal {
+        display: grid;
+        grid-template-rows: repeat(1, 5fr);
+        grid-template-columns: repeat(3, 5fr);
+        justify-content: space-evenly;
+}
+
+main section p {
+        color: grey;
+        font-family: 'Antonio', sans-serif;
+        font-size: 15px;
+        }
+
+main section h2 {
+        color: gray;
+        font-family: 'Koulen', cursive;
+        font-size: 30px;
+        text-align: left;
+        border-right: 10px;
+        border-bottom: 5px;
+        border-left: 5px;
+        border-top: 5px;
+        padding: 20px;
+        margin: 10px;
+        align-items: center;
+        }
+        
+.p_herrero img{
+        width:20vw;
+        margin-bottom:20px;
+        padding: 0;
+        border: 0;
+        margin: 0;
+        grid-area: herrero;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        
+.p_modena img{
+        width:18vw;
+        margin-bottom:20px;
+        padding: 0;
+        border: 0;
+        margin: 0;
+        grid-area: modena;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        
+
+.p_a30 img{
+        width:12vw;
+        margin-bottom:20px;
+        padding: 0;
+        border: 0;
+        margin: 0;
+        grid-area: a30;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+/*pie de pagina*/     
+
+li{
+        list-style: none;
+        }
+            
+.ul_redes {
+        color: white;
+        font-family: 'Antonio', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        background-color: black;
+        width: 100vw;
+        height: 30px;
+        }
+            
+.ul_redes li {
+        display: inline;
+        padding-right:20px;
+        padding-left:20px;
+        position:center;
+        right:50%;
+        }
+
+
+/*mobile*/
+@media screen and (max-width: 768px){
+        
+        /*barra navegadora*/
+        #menu {
+            background-color: black;
+            border-top-width: 0px;
+            width: 100vw;
+            height: 80px;
+            }
+
+        nav ul li {
+                display: none;
+        }
+
+        .nav img {
+            width: 10vw;
+            margin-bottom: 20px;
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+        /*falta menu hamburguesa*/
+
+        /*contenido principal*/
+        #contenido_principal {
+                display: grid;
+                grid-template-rows: repeat(3, 5fr);
+                grid-template-columns: repeat(1, 5fr);
+                justify-content: center;
+        }
+        
+        main section p {
+                color: grey;
+                font-family: 'Antonio', sans-serif;
+                font-size: 15px;
+
+                }
+
+        main section h2 {
+                color: gray;
+                font-family: 'Koulen', cursive;
+                font-size: 30px;
+                text-align: left;
+                border-right: 10px;
+                border-bottom: 5px;
+                border-left: 5px;
+                border-top: 5px;
+                padding: 20px;
+                margin: 10px;
+                align-items: center;
+                }
+                        
+        .p_herrero img{
+                width:20vw;
+                margin-bottom:20px;
+                padding: 0;
+                border: 0;
+                margin: 0;
+                grid-area: herrero;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+        .p_modena img{
+                width:18vw;
+                margin-bottom:20px;
+                padding: 0;
+                border: 0;
+                margin: 0;
+                grid-area: modena;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+                        
+        .p_a30 img{
+                width:12vw;
+                margin-bottom:20px;
+                padding: 0;
+                border: 0;
+                margin: 0;
+                grid-area: a30;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+        /*footer*/
+        li{
+                list-style: none;
+                }
+                    
+        .ul_redes {
+                color: white;
+                font-family: 'Antonio', sans-serif;
+                font-size: 15px;
+                text-align: center;
+                background-color: black;
+                width: 100vw;
+                height: 30px;
+                }
+                    
+        .ul_redes li {
+                display: inline;
+                padding-right:20px;
+                padding-left:20px;
+                position:center;
+                right:50%;
+                }
+                    
+}
